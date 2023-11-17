@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Menu from "../../components/menu/menu";
 import Busca from "../../components/busca/busca";
-
+import "./noticias.css";
 
 
 function Noticias() {
     const [noticias, setNoticias] = useState([]);
     const apiKey = "09606344e84e43fbaaca0127c520f976";
-    const apiUrl = `https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=de&apiKey=${apiKey}`;
 
+
+    
     useEffect(() => {
         axios
             .get(apiUrl)
@@ -35,7 +37,7 @@ function Noticias() {
                         </div>
 
                         <div className="d-flex justify-content-between">
-                            <ul className="fs-3">
+                            <ul className="fs-3 noticias">
                                 {noticias.map((noticia, index) => (
                                     <li key={index}>
                                         <a href={noticia.url} target="_blank" rel="noopener noreferrer">

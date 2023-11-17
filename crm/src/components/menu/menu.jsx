@@ -31,7 +31,7 @@ function Menu(props){
                     </li>
 
                     <li className="nav-item">
-                        <Link to="/Noticias" className={props.page === "noticias" ? linkBlue : linkBlack}>
+                        <Link to="/noticias" className={props.page === "noticias" ? linkBlue : linkBlack}>
                             <i className="=fs-4 bi bi-wallet2"></i> <span className="ms-1 d-none d-sm-inline">Notícias</span>
                         </Link>
                     </li>
