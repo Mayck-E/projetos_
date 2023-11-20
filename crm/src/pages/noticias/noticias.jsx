@@ -8,7 +8,7 @@ import "./noticias.css";
 function Noticias() {
     const [noticias, setNoticias] = useState([]);
     const apiKey = "09606344e84e43fbaaca0127c520f976";
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=de&apiKey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=br&apiKey=${apiKey}`;
 
 
     

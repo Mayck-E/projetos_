@@ -9,8 +9,8 @@ const Previsao = () => {
 
     useEffect(() => {
         // Substitua a cidade e o país conforme necessário
-        const cidade = "London";
-        const pais = "uk";
+        const cidade = "Votuporanga";
+        const pais = "brasil";
 
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cidade},${pais}&appid=${apiKey}`;
 
@@ -34,7 +34,16 @@ const Previsao = () => {
 
 //01 ideia para tradução: criar array com palavras traduzidas e outras com as palavras em ingles
 //02 percorrer ela até encontrar a palavra usada
+    let palavrasIngles = ['broken clouds', 'overcast clouds'];
+    let palavrasTraduzidas = ['Nuvens Quebradas', 'Nuvens Nubladas']
+    let resultadoPalavra
 
+    for(let i = 0; i< palavrasIngles.length; i++){
+        if(palavrasIngles[i] === previsao.weather[0].description){
+            resultadoPalavra = palavrasTraduzidas[i];
+        }
+        console.log(resultadoPalavra)
+    }
 
     
 
@@ -55,7 +64,8 @@ const Previsao = () => {
             <h2>Previsão do Tempo</h2>
             <p>Cidade: {previsao.name}</p>
             <p>Temperatura: {arredondar} °C</p>
-            <p>Condição: {previsao.weather[0].description}</p></div></div></div></div>
+            <p>Condição: {resultadoPalavra}</p></div></div></div></div>
+            
         </div>
     );
 };
