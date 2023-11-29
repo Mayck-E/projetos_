@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Dashboard from "./pages/dashboard/dashboard.jsx";
-import Noticias from "./pages/noticias/noticias.jsx";
-import Negocios from "./pages/negocios/negocios.jsx";
-import Previsao from "./pages/previsao/previsao.jsx";
+import Dashboard from "./pages/page_dashboard/page_dashboard.jsx";
+import Noticias from "./pages/page_noticias/page_noticias.jsx";
+import Negocios from "./pages/page_negocios/page_negocios.jsx";
+import Previsao from "./pages/page_previsao/page_previsao.jsx";
 
 function Rotas() {
     return <BrowserRouter>
