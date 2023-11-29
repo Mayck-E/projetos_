@@ -3,9 +3,9 @@
 body{
     overflow-x: hidden;
     font-family: 'Autour One';
-    background-color: #494949;
+    background-color: #303030;
     font-weight: 500;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 select{

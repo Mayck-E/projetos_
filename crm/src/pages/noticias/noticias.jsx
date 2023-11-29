@@ -11,7 +11,7 @@ function Noticias() {
     const apiUrl = `https://newsapi.org/v2/top-headlines?country=br&apiKey=${apiKey}`;
 
 
-    
+
     useEffect(() => {
         axios
             .get(apiUrl)
@@ -23,7 +23,7 @@ function Noticias() {
             });
     }, []);
 
-    return (
+    return <>
         <div>
             <div className="container-fluid">
                 <div className="row flex-nowrap">
@@ -53,7 +53,8 @@ function Noticias() {
             </div>
 
         </div>
-    );
+    </>
+
 }
 
 export default Noticias;
