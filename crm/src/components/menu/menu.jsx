@@ -42,6 +42,12 @@ function Menu(props){
                         </Link>
                     </li>
 
+                    <li className="nav-item">
+                        <Link to="/atividades" className={props.page === "atividades" ? linkBlue : linkBlack}>
+                            <i className="=fs-4 bi bi-wallet2"></i> <span className="ms-1 d-none d-sm-inline">Atividades</span>
+                        </Link>
+                    </li>
+
                 </ul>
             </div>
         </>
