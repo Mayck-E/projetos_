@@ -1,0 +1,8 @@
+.imgs-crud{
+    width: 30px;
+    margin-left: .6rem;
+}
+
+.imgs-crud:hover{
+    cursor: pointer;
+}
