@@ -1,13 +1,16 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import logo from"../../assets/logo.png";
-import "./menu.css"
+import React from "react"; //importado o react
+import { Link, NavLink } from "react-router-dom"; //importando do react-router-dom o LINK
+import logo from"../../assets/logo.png"; //importando a logo
+import "./menu.css" // importando a folha de estilos
 
+// função do objeto com o atributo props
 function Menu(props){
 
+    //constante para mudar a cor dos links
     const linkBlue = "nav-link align-middle px-0"
     const linkBlack = "nav-link align-middle px-0 link-secondary"
 
+    // retorna o HTML
         return <>
             <div className="d-flex flex-collumn align-itens-center align-itens-sm-start px-3 pt-2 text-white min-vh-100">
 
@@ -53,4 +56,6 @@ function Menu(props){
         </>
 }
 
+
+// deixa publico a função MENU
 export default Menu;

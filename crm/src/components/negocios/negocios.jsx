@@ -1,8 +1,9 @@
-import "./negocios.css";
+import "./negocios.css"; //import do CSS
 
+// função do componente NEGOCIO, ela retorna o HTML
 function Negocio() {
-    return <>
 
+    return <>
         <div className=" p-4 rounded-4 border">
             <div className="d-flex justify-content-between mb-3">
                 <div className="d-inline-flex">
@@ -25,4 +26,5 @@ function Negocio() {
     </>
 }
 
+// deixa a função visivel 
 export default Negocio;

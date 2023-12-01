@@ -1,7 +1,9 @@
+// função do objeto indicador
 function Indicador(props){
+    // retornando o HTML
     return <div className="card bg-transparent text-light border-light">
         <div className="card-header">
-            {props.titulo}
+            {props.titulo} {/*usando as informações passadas pela função*/}
         </div>
         <div className="card-body text-center text-reset">
             <h5 className="card-title">{props.valor}</h5>
@@ -11,4 +13,5 @@ function Indicador(props){
     
 }
 
+// deixando o a função publica
 export default Indicador;

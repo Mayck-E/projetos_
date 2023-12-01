@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-
+// consntante Previsao para fazer a conexao com a API e retorna os dados em paragrafos HTML
 const Previsao = () => {
     const [previsao, setPrevisao] = useState(null);
     const apiKey = "c1546a14357ae0b10c01b1d480a16012"; // Substitua pelo seu próprio chave da API
@@ -31,7 +31,7 @@ const Previsao = () => {
     const arredondar = Math.round(paraCelcius);
 
 
-    //01 ideia para tradução: criar array com palavras traduzidas e outras com as palavras em ingles
+    //01 array com palavras traduzidas e outras com as palavras em ingles
     //02 percorrer ela até encontrar a palavra usada
     const palavrasIngles = ['broken clouds', 'overcast clouds', 'scattered clouds', 'light rain', 'clear sky'];
     const palavrasTraduzidas = ['Nuvens Quebradas', 'Nuvens Nubladas', 'Nuvens Dispersas', 'Chuva Leve', 'Céu Limpo']
@@ -56,4 +56,5 @@ const Previsao = () => {
 
 };
 
+// exporta a pravisao
 export default Previsao;

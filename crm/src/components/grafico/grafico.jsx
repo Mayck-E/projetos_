@@ -1,6 +1,9 @@
+// importando o google charts para o arquivo
 import { Chart } from "react-google-charts";
 
+// função do objeto GRAFICO
 function Grafico(props) {
+    // constande array com as informações de mes e valor
     const dados = [
         ["Mês", "Valor"],
         ["Janeiro", 1000],
@@ -17,10 +20,12 @@ function Grafico(props) {
         ["12", 1000],
     ];
 
+    // constante definindo as opções de legenda
     const options = {
         legend: props.legenda ? {} : { position: "none" }
     }
 
+    // usando os dados informados no Dashboard pela função <grafico>
     return <div className="card bg-light-subtle">
         <div className="card-header">
             {props.titulo}
