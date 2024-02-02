@@ -1,24 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
-import { Alert, Button, Image, StyleSheet, Text, View } from 'react-native';
+import { Alert, Button, Image, StyleSheet, Text, View, TextInput } from 'react-native';
 import Mapa from './Mapa.js';
 
 
-
+  
 export default function App() {
+
   return (
 
     <View style={styles.container}>
-      <Text style={styles.texto1}>Hehehe</Text>
-      <Image source={require("./assets/teste.png")} style={styles.img}></Image>
-      <Button
-        title="aperte"
-        onPress={() => Alert.alert('oi', 'bom dia')}
-      />
-      <StatusBar style="auto" />
-      <Mapa />
+      <View>
+        <Text style={styles.texto1}>🐸</Text>
+        <Image source={require("./assets/01.png")} style={styles.img}></Image>
+        <Button
+          title="aperte"
+          onPress={() => Alert.alert('oi', 'bom dia')}
+        />
+        <TextInput placeholder='escreva' ></TextInput>
+        <StatusBar style="auto" />
+      </View>
+      <View>
+        <Mapa />
 
+      </View>
     </View>
-    
+
 
 
   );
@@ -35,14 +41,16 @@ const styles = StyleSheet.create({
   },
   texto1: {
     fontSize: 40,
+    textAlign: 'center'
   },
   img: {
     borderRadius: 200,
+    width: 150,
+    height: 150,
   },
   map: {
     width: '100%',
     height: '50%',
-    borderRadius: 50
   },
 
 });
